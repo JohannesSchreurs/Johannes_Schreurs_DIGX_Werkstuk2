@@ -33,9 +33,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var locationManager = CLLocationManager()
     
     let url = URL(string: "https://api.jcdecaux.com/vls/v1/stations?apiKey=6d5071ed0d0b3b68462ad73df43fd9e5479b03d6&contract=Bruxelles-Capitale")
-    var index = 0
     
-    var stations = [Station]()
+    var stations = Array<Station>()
     
     override func viewDidLoad() {
         super.viewDidLoad()

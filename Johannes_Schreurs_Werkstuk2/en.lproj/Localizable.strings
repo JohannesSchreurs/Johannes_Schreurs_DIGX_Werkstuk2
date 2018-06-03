@@ -5,11 +5,11 @@
   Created by Johannes Schreurs on 03/06/2018.
   Copyright © 2018 Johannes Schreurs. All rights reserved.
 */
-"no_bikes_available"   = "No bikes available.";
-"bikes_available"     = "Bikes available: ";
-"update"          = "Last update:";
-"bonus"                = "Bonus!";
-"no_bonus"             = "No bonus.";
+"no_bikes_available"    = "No bikes available.";
+"bikes_available"       = "Bikes available: ";
+"update"                = "Last update:";
+"bonus"                 = "Bonus!";
+"no_bonus"              = "No bonus.";
 "open"                  = "Open";
 "closed"                = "Closed";
 "refresh"               = "Refresh!";
