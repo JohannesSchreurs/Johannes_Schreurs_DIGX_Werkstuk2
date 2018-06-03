@@ -5,15 +5,15 @@
   Created by Johannes Schreurs on 03/06/2018.
   Copyright © 2018 Johannes Schreurs. All rights reserved.
 */
-"No bikes available."   = "No bikes available.";
-"Bikes available: "     = "Bikes available: ";
-"Last update:"          = "Last update:";
-"Bonus!"                = "Bonus!";
-"No bonus."             = "No bonus.";
-"Open"                  = "Open";
-"Closed"                = "Closed";
-"Refresh"               = "Refresh!";
-"Lang"                  = "To Dutch";
+"no_bikes_available"   = "No bikes available.";
+"bikes_available"     = "Bikes available: ";
+"update"          = "Last update:";
+"bonus"                = "Bonus!";
+"no_bonus"             = "No bonus.";
+"open"                  = "Open";
+"closed"                = "Closed";
+"refresh"               = "Refresh!";
+"lang"                  = "To Dutch";
 "modal_title"           = "Change your language";
-"modal_body"            = "To change the language of the app, you need to change the language of your device.";
+"modal_body"            = "To change the language of the app, you need to change the language of your device.\n This is just to let you know.";
 "dismiss"               = "Dismiss";

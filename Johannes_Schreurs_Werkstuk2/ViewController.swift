@@ -41,9 +41,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
-        self.updateTextLable.text = NSLocalizedString("Last update:", comment: "")
-        self.myButton.setTitle(NSLocalizedString("Refresh", comment: ""), for: .normal)
-        self.myLangButton.setTitle(NSLocalizedString("Lang", comment: ""), for: .normal)
+        self.updateTextLable.text = NSLocalizedString("update", comment: "")
+        self.myButton.setTitle(NSLocalizedString("refresh", comment: ""), for: .normal)
+        self.myLangButton.setTitle(NSLocalizedString("lang", comment: ""), for: .normal)
         
         refresh()
         //Map functions
@@ -151,20 +151,20 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: station.latitude, longitude: station.longitude)
                 
                 var subTitelStatus:String?
-                var subTitelFietsen = "\n" + NSLocalizedString("Bikes available: ", comment: "") + String(station.availableBikes) + "/" + String(station.bikeStands)
+                var subTitelFietsen = "\n" + NSLocalizedString("bikes_available", comment: "") + String(station.availableBikes) + "/" + String(station.bikeStands)
                 var subTitelBonus:String?
                 
                 if(station.bonus){
-                    subTitelBonus = "\n" + NSLocalizedString("Bonus!", comment: "")
+                    subTitelBonus = "\n" + NSLocalizedString("bonus", comment: "")
                 } else{
-                    subTitelBonus = "\n" + NSLocalizedString("No bonus.", comment: "")
+                    subTitelBonus = "\n" + NSLocalizedString("no_bonus", comment: "")
                 }
                 
                 if(station.status == "OPEN"){
-                    subTitelStatus = NSLocalizedString("Open", comment: "")
+                    subTitelStatus = NSLocalizedString("open", comment: "")
                 } else{
-                    subTitelStatus = NSLocalizedString("Closed", comment: "")
-                    subTitelFietsen = "\n" + NSLocalizedString("No bikes available.", comment: "")
+                    subTitelStatus = NSLocalizedString("closed", comment: "")
+                    subTitelFietsen = "\n" + NSLocalizedString("no_bikes_available", comment: "")
                 }
                 
                 let subtitle = subTitelStatus! + subTitelFietsen + subTitelBonus!
