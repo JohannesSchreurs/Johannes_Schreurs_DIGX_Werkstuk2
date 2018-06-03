@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Johannes_Schreurs_Werkstuk2
+
+  Created by Johannes Schreurs on 03/06/2018.
+  Copyright © 2018 Johannes Schreurs. All rights reserved.
+*/
+"No bikes available."   = "Geen fietsen meer.";
+"Bikes available: "     = "Aantal fietsen: ";
+"Last update:"          = "Laatste update:";
+"Bonus!"                = "Bonus!";
+"No bonus."             = "Geen bonus.";
+"Open"                  = "Open";
+"Closed"                = "Gesloten";
+"Refresh"               = "Vernieuwen!";
+"Lang"                  = "Naar Engels";
+"modal_title"           = "Wijzigen van taal";
+"modal_body"            = "Om de taal van de app te wijzigen, moet u de taal van uw telefoon wijzigen.";
+"dismiss"               = "Sluiten";

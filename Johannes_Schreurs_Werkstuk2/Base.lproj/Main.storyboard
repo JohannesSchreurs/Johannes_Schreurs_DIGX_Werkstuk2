@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Johannes_Schreurs_Werkstuk2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-JC-CnJ">
+                                <rect key="frame" x="0.0" y="103" width="320" height="426"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="e6f-Nc-bdD"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last update:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19f-eU-yKh">
+                                <rect key="frame" x="16" y="74" width="95.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dude, where's my Villo?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-Cq-kjz">
+                                <rect key="frame" x="27" y="31" width="266" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve2-R5-OfL">
+                                <rect key="frame" x="119.5" y="74" width="33.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLg-VM-Gqn">
+                                <rect key="frame" x="16" y="533" width="58" height="30"/>
+                                <state key="normal" title="Refresh!"/>
+                                <connections>
+                                    <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Djp-p1-4cI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxL-bl-QqG">
+                                <rect key="frame" x="234" y="533" width="68" height="30"/>
+                                <state key="normal" title="Language"/>
+                                <connections>
+                                    <action selector="langChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5J-nD-Fx1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="19f-eU-yKh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="28r-fL-Jc3"/>
+                            <constraint firstItem="19f-eU-yKh" firstAttribute="top" secondItem="sfi-Cq-kjz" secondAttribute="bottom" constant="14" id="5Cq-ij-d6i"/>
+                            <constraint firstItem="Kk8-JC-CnJ" firstAttribute="top" secondItem="19f-eU-yKh" secondAttribute="bottom" constant="8" symbolic="YES" id="Ex5-U9-SBY"/>
+                            <constraint firstItem="19f-eU-yKh" firstAttribute="baseline" secondItem="Ve2-R5-OfL" secondAttribute="baseline" id="GA6-ea-bqH"/>
+                            <constraint firstItem="sfi-Cq-kjz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IiS-Kw-uiV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Kk8-JC-CnJ" secondAttribute="bottom" constant="39" id="J7F-JI-kay"/>
+                            <constraint firstItem="Kk8-JC-CnJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T1j-ct-A3V"/>
+                            <constraint firstItem="Ve2-R5-OfL" firstAttribute="leading" secondItem="19f-eU-yKh" secondAttribute="trailing" constant="8" symbolic="YES" id="VNj-sM-ohM"/>
+                            <constraint firstItem="sfi-Cq-kjz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="j0Q-j0-dfv"/>
+                            <constraint firstItem="RxL-bl-QqG" firstAttribute="baseline" secondItem="lLg-VM-Gqn" secondAttribute="baseline" id="mki-LT-HV1"/>
+                            <constraint firstItem="lLg-VM-Gqn" firstAttribute="top" secondItem="Kk8-JC-CnJ" secondAttribute="bottom" constant="4" id="s1C-xV-txP"/>
+                            <constraint firstItem="lLg-VM-Gqn" firstAttribute="leading" secondItem="19f-eU-yKh" secondAttribute="leading" id="wCx-rz-JNX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kk8-JC-CnJ" secondAttribute="trailing" constant="-16" id="wZX-PQ-gHf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RxL-bl-QqG" secondAttribute="trailing" constant="18" id="yXa-R2-0nd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="lLg-VM-Gqn" id="iJY-SL-DAY"/>
+                        <outlet property="myLangButton" destination="RxL-bl-QqG" id="e09-xi-Cvf"/>
+                        <outlet property="myMapView" destination="Kk8-JC-CnJ" id="b4X-Jm-fuo"/>
+                        <outlet property="updateLabel" destination="Ve2-R5-OfL" id="Pt2-qk-J3m"/>
+                        <outlet property="updateTextLable" destination="19f-eU-yKh" id="1jm-6Z-oM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="123.59154929577466"/>
+        </scene>
+    </scenes>
+</document>

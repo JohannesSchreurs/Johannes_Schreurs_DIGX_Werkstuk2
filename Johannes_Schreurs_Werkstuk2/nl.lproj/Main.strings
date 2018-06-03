@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Last update:"; ObjectID = "19f-eU-yKh"; */
+"19f-eU-yKh.text" = "Laatste update:";
+
+/* Class = "UIButton"; normalTitle = "NL/EN"; ObjectID = "RxL-bl-QqG"; */
+"RxL-bl-QqG.normalTitle" = "Naar Engels";
+
+/* Class = "UILabel"; text = "timeUpdate"; ObjectID = "Ve2-R5-OfL"; */
+"Ve2-R5-OfL.text" = "timeUpdate";
+
+/* Class = "UIButton"; normalTitle = "Refresh!"; ObjectID = "lLg-VM-Gqn"; */
+"lLg-VM-Gqn.normalTitle" = "Vernieuwen!";
+
+/* Class = "UILabel"; text = "Dude, where's my Villo?"; ObjectID = "sfi-Cq-kjz"; */
+"sfi-Cq-kjz.text" = "Dude, where's my Villo?";
