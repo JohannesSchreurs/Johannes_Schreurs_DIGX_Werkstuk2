@@ -1,2 +1,3 @@
 # Johannes_Schreurs_DIGX_Werkstuk2
-Project for the course Mobile App Development: iOS
+An app using the Villo API to locate different bike stations. 
+Served in English and Dutch.
